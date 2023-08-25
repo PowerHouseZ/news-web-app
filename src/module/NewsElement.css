@@ -1,0 +1,358 @@
+/* CSS for the News Catalogue page */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+:root {
+  --color-primary: #cb82d0;
+  --color-secondary: #081257;
+  --color-background: #000000;
+  --color-accent: #ff3366;
+  --color-text: #ffffff;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-secondary);
+}
+
+header {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  padding: 25px;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.contact-container {
+  text-align: center;
+  padding: 20px;
+  color: var(--color-text);
+}
+
+.contact-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.back-button {
+  background-color: #081257;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  margin-left: 300px;
+  margin-right: 310px;
+}
+
+.logo img {
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  color: var(--color-secondary);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+
+.menu li:hover {
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 20px;
+}
+
+/* CSS for the NewsElement component */
+.news-element {
+  width: 400px;
+  margin: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 20px solid #cb82d0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #000000;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.news-element:hover .content {
+  background-color: var(--color-primary);
+}
+
+.news-element:hover h2,
+.news-element:hover p,
+.news-element:hover a {
+  color: var(--color-secondary);
+}
+
+.news-element img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-element .content {
+  padding: 10px;
+}
+
+.news-element h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  color: var(--color-text);
+}
+
+.news-element p {
+  font-size: 14px;
+  margin: 10px;
+  padding: 10px;
+  color: var(--color-text);
+}
+
+.news-element a {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.news-element a:hover {
+  background-color: var(--color-accent);
+}
+
+/* Optional Retrowave theme */
+.newswebsite {
+  justify-content: center;
+  display: flex;
+  background-image: linear-gradient(135deg, #cb82d0 0%, #081257 100%);
+}
+
+/* CSS for the navigation menu */
+.home-link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 60px;
+  margin-left: 10px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #081257; /* Set the desired color for the link */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  cursor: pointer;
+  color: var(--color-text); /* Add underline on hover */
+}
+
+.menu a,
+.news-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:active,
+.menu a:focus,
+.news-container a:hover,
+.news-container a:active,
+.news-container a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+.menu li a.active {
+  border-bottom: 2px solid #333;
+}
+
+.about-section {
+  margin-top: 20px;
+}
+
+.about-section h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Optional styles for the footer */
+footer {
+  background-color: var(--color-primary);
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.youtube-icon {
+  color: #ff0000;
+}
+
+.load1 {
+  color: #cb82d0;
+  font-size: 25px;
+}
+
+.facebook-icon {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+/* Add similar CSS for other social media icons if needed */
+.linkedin-icon {
+  left: 10px;
+  position: absolute;
+  top: 70px;
+}
+
+.github-icon {
+  left: 10px;
+  position: absolute;
+  top: 130px;
+}
+
+.news-element button:nth-child(1) {
+  /* Add custom styles for the Facebook button */
+  margin: 10px;
+}
+
+.news-element button:nth-child(2) {
+  /* Add custom styles for the Facebook button */
+  margin: 10px;
+}
+
+.news-element button:nth-child(3) {
+  /* Add custom styles for the Facebook button */
+  color: #1877f2; /* Facebook blue */
+  margin: 10px;
+}
+
+.news-element button:nth-child(3):hover {
+  cursor: pointer;
+}
+
+/* Style the Tweet this button */
+.news-element button:nth-child(4) {
+  /* Add custom styles for the Twitter button */
+  color: #1da1f2; /* Twitter blue */
+  margin: 10px;
+}
+
+.news-element button:nth-child(1):hover {
+  cursor: pointer;
+}
+
+.news-element button:nth-child(2):hover {
+  cursor: pointer;
+}
+
+.news-element button:nth-child(3):hover {
+  cursor: pointer;
+}
+
+.news-element button:nth-child(4):hover {
+  cursor: pointer;
+}
