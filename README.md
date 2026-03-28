@@ -1,6 +1,6 @@
 # News Web App 📰
 
-A simple and responsive web application that fetches and displays the latest news articles using a public News API. This project demonstrates API integration, asynchronous JavaScript, DOM manipulation, and clean UI design.
+
 
 ---
 
