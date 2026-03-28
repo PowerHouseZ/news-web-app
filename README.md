@@ -1,9 +1,5 @@
 # News Web App 📰
 
-
-
----
-
 ## 🚀 Features
 
 - Fetches real-time news articles from a public API  
