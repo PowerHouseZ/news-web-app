@@ -22,7 +22,6 @@
 ## 📦 Live Demo
 
 👉 **[Click here to try the app](https://powerhousez.github.io/news-web-app/)**  
-*(Replace with your GitHub Pages / Netlify / Vercel link if deployed.)*
 
 ---
 
